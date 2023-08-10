@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E89792B3-40D3-423B-8611-031B33EFDF87}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>11.0</LangVersion>
+    <AssemblyName>Roblox.Common</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="Microsoft.Ccr.Core">
+      <HintPath>C:\Roblox\Branches\trunk\arbiter-deps\Microsoft.Ccr.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Roblox.Configuration">
+      <HintPath>C:\Roblox\Branches\trunk\arbiter-deps\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationConfig Include="Roblox.Common.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roblox.Ccr\DispatcherMonitor.cs" />
+    <Compile Include="Roblox.Ccr\ExceptionPort.cs" />
+    <Compile Include="Roblox.Ccr\HttpHandler.cs" />
+    <Compile Include="Roblox.Ccr\HttpModule.cs" />
+    <Compile Include="Roblox.Common.Mail.Pop3\EmailUid.cs" />
+    <Compile Include="Roblox.Common.Mail.Pop3\Pop3ConnectionStateEnum.cs" />
+    <Compile Include="Roblox.Common.Mail.Pop3\Pop3Exception.cs" />
+    <Compile Include="Roblox.Common.Mail.Pop3\Pop3MailClient.cs" />
+    <Compile Include="Roblox.Common.Mail.Pop3\TraceHandler.cs" />
+    <Compile Include="Roblox.Common.Mail.Pop3\WarningHandler.cs" />
+    <Compile Include="Roblox.Common.Mime\MediaTypes.cs" />
+    <Compile Include="Roblox.Common.Mime\MimeEntity.cs" />
+    <Compile Include="Roblox.Common.Mime\MimeHeaders.cs" />
+    <Compile Include="Roblox.Common.Mime\MimeReader.cs" />
+    <Compile Include="Roblox.Common.Mime\QuotedPrintableEncoding.cs" />
+    <Compile Include="Roblox.Common.Properties\Settings.cs" />
+    <Compile Include="Roblox.Common\AsyncHelper.cs" />
+    <Compile Include="Roblox.Common\AsyncWorkQueue.cs" />
+    <Compile Include="Roblox.Common\CollectionsHelper.cs" />
+    <Compile Include="Roblox.Common\CompletionSignal.cs" />
+    <Compile Include="Roblox.Common\Converters.cs" />
+    <Compile Include="Roblox.Common\CustomThreadPool.cs" />
+    <Compile Include="Roblox.Common\Email.cs" />
+    <Compile Include="Roblox.Common\EntityCollectionItem.cs" />
+    <Compile Include="Roblox.Common\EntityCollectionJson.cs" />
+    <Compile Include="Roblox.Common\EntityCountJson.cs" />
+    <Compile Include="Roblox.Common\EventCounter.cs" />
+    <Compile Include="Roblox.Common\Extensions.cs" />
+    <Compile Include="Roblox.Common\FastAsyncResult.cs" />
+    <Compile Include="Roblox.Common\FileHelper.cs" />
+    <Compile Include="Roblox.Common\IJSONizable.cs" />
+    <Compile Include="Roblox.Common\IResult.cs" />
+    <Compile Include="Roblox.Common\JSON.cs" />
+    <Compile Include="Roblox.Common\MailHeaders.cs" />
+    <Compile Include="Roblox.Common\MailMessageEx.cs" />
+    <Compile Include="Roblox.Common\MimeTypes.cs" />
+    <Compile Include="Roblox.Common\NonReentrantTimer.cs" />
+    <Compile Include="Roblox.Common\ObjectCounter.cs" />
+    <Compile Include="Roblox.Common\RefreshAhead.cs" />
+    <Compile Include="Roblox.Common\Request.cs" />
+    <Compile Include="Roblox.Common\Result.cs" />
+    <Compile Include="Roblox.Common\RoundRobin.cs" />
+    <Compile Include="Roblox.Common\SynchronousCompletionAsyncResult.cs" />
+    <Compile Include="Roblox.Common\TextTransforms.cs" />
+    <Compile Include="Roblox.Common\VisitsFloodCheckBuffer.cs" />
+    <Compile Include="Roblox.Common\Xml.cs" />
+    <Compile Include="Roblox.Common\XmlBase.cs" />
+    <Compile Include="Roblox.Common\XMLUtil.cs" />
+    <Compile Include="Roblox.RSS\CustomImage.cs" />
+    <Compile Include="Roblox.RSS\IChannel.cs" />
+    <Compile Include="Roblox.RSS\IImage.cs" />
+    <Compile Include="Roblox.RSS\IItem.cs" />
+    <Compile Include="Roblox.RSS\StandardFeedImage.cs" />
+    <Compile Include="Roblox.ServiceModel\PersistentChannel.cs" />
+    <Compile Include="Roblox.ServiceProcess\IArgumentService.cs" />
+    <Compile Include="Roblox.ServiceProcess\ServiceBasePublic.cs" />
+    <Compile Include="Roblox.ServiceProcess\ServiceHostApp.cs" />
+    <Compile Include="Roblox.ServiceProcess\ServiceHostInstaller.cs" />
+    <Compile Include="Roblox\AsyncDictionary.cs" />
+    <Compile Include="Roblox\BackgroundThreadHelper.cs" />
+    <Compile Include="Roblox\BasicService.cs" />
+    <Compile Include="Roblox\CcrService.cs" />
+    <Compile Include="Roblox\ExceptionHandler.cs" />
+    <Compile Include="Roblox\HashFunctions.cs" />
+    <Compile Include="Roblox\IAsyncDictionary.cs" />
+    <Compile Include="Roblox\IExceptionHandlerListener.cs" />
+    <Compile Include="Roblox\Interleaver.cs" />
+    <Compile Include="Roblox\LogInstaller.cs" />
+    <Compile Include="Roblox\NotLoggedException.cs" />
+    <Compile Include="Roblox\ObjectRegistry.cs" />
+    <Compile Include="Roblox\ParallelDictionary.cs" />
+    <Compile Include="Roblox\PatchedDispatcherQueue.cs" />
+    <Compile Include="Roblox\RobloxThreadPool.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
