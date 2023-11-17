@@ -21,9 +21,9 @@ namespace Roblox
                         Console.WriteLine("Starting {0}...", GetType());
                         OnStart(args);
 
-                        Console.WriteLine("Service started. Press any key to {0}.", statsTask == null ? "exit" : "get stats");
-                        Console.WriteLine("Press {0} to force a full Garbage Collection cycle", garbageCollectionKey);
-                        Console.WriteLine("Press {0} to exit process", exitKey);
+                       // Console.WriteLine("Service started. Press any key to {0}.", statsTask == null ? "exit" : "get stats");
+                    //    Console.WriteLine("Press {0} to force a full Garbage Collection cycle", garbageCollectionKey);
+                    //    Console.WriteLine("Press {0} to exit process", exitKey);
                         while (true)
                         {
                             ConsoleKey key = Console.ReadKey(true).Key;

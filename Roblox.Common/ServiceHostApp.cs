@@ -162,9 +162,9 @@ namespace Roblox.ServiceProcess
                         Console.WriteLine("Starting {0}...", typeof(TServiceClass));
                         OnStart(args);
 
-                        Console.WriteLine("Service started. Press any key to {0}.", statsTask == null ? "exit" : "get stats");
-                        Console.WriteLine("Press {0} to force a full Garbage Collection cycle", garbageCollectionKey);
-                        Console.WriteLine("Press {0} to close sockets or {1} to exit process", closeSocketsKey, exitKey);
+                     //   Console.WriteLine("Service started. Press any key to {0}.", statsTask == null ? "exit" : "get stats");
+                     //   Console.WriteLine("Press {0} to force a full Garbage Collection cycle", garbageCollectionKey);
+                    //    Console.WriteLine("Press {0} to close sockets or {1} to exit process", closeSocketsKey, exitKey);
                         while (true)
                         {
                             ConsoleKey key = Console.ReadKey(true).Key;

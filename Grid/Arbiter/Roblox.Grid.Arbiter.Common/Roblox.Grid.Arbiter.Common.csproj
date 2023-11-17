@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Roblox.Grid.Arbiter.Common</RootNamespace>
     <AssemblyName>Roblox.Grid.Arbiter.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
